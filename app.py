@@ -30,6 +30,14 @@ def indexasdas():
     return  render_template('index.html',**context)
 
 
+@app.route('/dasd123123')
+def indexasdas123213():
+    context = {
+        'questions' :Question.query.order_by('-create_time').all()
+    }
+    return  render_template('index.html',**context)
+
+
 
 @app.route('/login/', methods=['GET', 'POST'])
 def login():
