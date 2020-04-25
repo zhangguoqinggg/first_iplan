@@ -1,0 +1,2 @@
+#flask-sqlacodegen --flask "mssql+pyodbc://iplan:1234qwerasdfzxcv!@zzz"  --tables m_customer,m_dept
+# flask-sqlacodegen --flask ""  --tables m_customer,m_dept,m_code,m_company,m_currency,m_current_status,m_dept,m_employe,m_employe_level_post,m_gm_order_type,m_industry_type,m_interface_resources,m_level,m_order_type,m_parent_order_type,m_prc_current_status,m_product,m_quote_precontract_post,m_sub_product,m_user,m_user_gm_pe,m_user_position,m_user_privilege_interface  --outfile "model/models.py"mssql+pyodbc://iplan:1234qwerasdfzxcv!@zzz

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}
+    首页
+{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/login.css') }}">
+{% endblock %}
+{% block main %}
+    <form action="" method="POST">
+    <h3 class="page-title">首页</h3>
+        <ul>
+            {% for question in questions %}
+            <li>
+                <div class="avatar-group">
+                     <img class='logo' src="{{ url_for('static',filename= 'image/logo.jpg') }}" alt="">
+                </div>
+                <div class="question-group">
+                    <p class="question-title"> {{ question.title }}</p>
+                    <p class="question-content">{{ question.content }}</p>
+                    <div class="question-info">
+                        <span class="question-autor">{{ question.author.username }}</span>
+                        <span class="question-autor">{{ question.create_time }}</span>
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+            
+
+        </ul>
+    </form>
+{% endblock %}
